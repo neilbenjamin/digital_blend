@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<!-- Same head as index -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Header Nav and Hero Banner with background image on Div container and logo as image supdrimposed -->
+    <header>
+        <div>
+            <ul class="list-unstyled">
+                <li class="nav-item responsive-font">
+                    <button  type="button" class="btn btn-info"><a class="nav-link" id="user-registration">REGISTER</a></button>
+                    <span id="welcome-message"></span>
+                    <button type="button" class="btn btn-warning" id="logout-btn">Log Out</button>
+                </li>
+                <!-- User Registration Pop-Up -->
+                <div class="container-md d-flex align-items-center justify-content-center">
+                    <div id="registration-popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn" id="close-popup">&times;</span>
+                            <!-- Registration form -->
+                            <form id="registration-form">
+                                <h4 class="text-center">REGISTER</h4>
+                                <!-- Form fields and inputs -->
+                                <!-- User Name -->
+                                <div class="user-name">
+                                    <label for="userName" class="label-width">Username:</label><br>
+                                    <input type="text" name="userName" id="userName" required><br>
+                                </div>
+                                <!-- User email -->
+                                <div class="user-email">
+                                    <label for="userEmail">email:</label><br>
+                                    <input type="email" name="userEmail" id="userEmail" required><br>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success submit-btn"
+                                        id="submit-user-reg">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="registration-popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="close-popup">&times;</span>
+                        <!-- Your registration form HTML goes here -->
+                        <form id="registration-form">
+                            <!-- Form fields and inputs -->
+                        </form>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="_media/DigitalBlendLogo.png" alt="Company Logo" style="width: 15%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- NavBar -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item responsive-font save-border-color">
+                            <a href="savedItems.html" class="nav-link">Saved</a>
+                        </li>
+
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="about-main">
+        <!-- First Article - H1 header -->
+        <div class="first-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h1 class="mainHeaderTitle display-1">gallery</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Article - Lead Overview -->
+        <div class="second-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-module d-flex justify-content-center align-items-center">
+                            <h3>PORTFOLIO ARCHIVE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image and content Cards with Btn links to source -->
+        <!-- Third Article - Text/Image Container -->
+        <div class="third-article">
+            <div class="container">
+                <!-- First Row -->
+                <div class="row pb-5">
+                    <!-- First Site -->
+                    <div class="col-md-4">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.gooiensteek.com/" class="text-decoration-none text-reset"
+                                    target="blank" id="website-link"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Gooi-En-Steek-Logo.webp" alt="Website Logo"></a>
+                            </div>
+                            <a href="https://www.gooiensteek.com//" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Gooi-en-steek.</h3>
+                                <p class="text-center">Culinary Delights</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.gooiensteek.com//"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.gooiensteek.com//"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save For Later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Second Site -->
+                    <div class="col-md-4">
+                        <div class="product-module" style="width: 100%">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.clintongahwiler.com/" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Psychology.webp" alt="Website Logo"></a>
+                            </div>
+                            <a href="https://www.clintongahwiler.com/" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Psychology</h3>
+                                <p class="text-center">Psychologist</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.clintongahwiler.com/"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.clintongahwiler.com/"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Third Site -->
+                    <div class="col-md-4">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.hamiltongallery.co.za/" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Hamilton-Gallery-Logo.webp" alt="Working on a laptop"></a>
+                            </div>
+                            <a href="https://www.hamiltongallery.co.za/" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Hamilton Gallery</h3>
+                                <p class="text-center">Art Gallery</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.hamiltongallery.co.za/"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.hamiltongallery.co.za/"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="row pt-5">
+                    <!-- First Site -->
+                    <div class="col-md-3">
+                        <div class="product-module" style="width: 100%">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.blacksheepmusic.co.za" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Blacksheep-Music-Logo.webp" alt="Laptop on desk"></a>
+                            </div>
+                            <a href="https://www.blacksheepmusic.co.za" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">BlackSheep Music</h3>
+                                <p class="text-center">Music Production Facilities</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.blacksheepmusic.co.za/"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.blacksheepmusic.co.za/"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Site -->
+                    <div class="col-md-3">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.capedjco.co.za/" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/CapeDJCo..webp" alt="Mobile Phone"></a>
+                            </div>
+                            <a href="https://www.capedjco.co.za/" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Cape DJ Co.</h3>
+                                <p class="text-center">Entertainment Agency</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.capedjco.co.za/"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.capedjco.co.za/"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://completeguitarguide.com/" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Complete-Guitar-Guide-Logo.webp" alt="Working on a laptop"></a>
+                            </div>
+                            <a href="https://completeguitarguide.com/" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Complete Guitar</h3>
+                                <p class="text-center">Tutorials & Education</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://completeguitarguide.com//"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://completeguitarguide.com//"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="https://www.octohoodie.com/" class="text-decoration-none text-reset"
+                                    target="blank"><img class="card-img-top img-fluid rounded"
+                                        src="_media/Octohoodie-Logo_Single.webp" alt="Working on a laptop"></a>
+                            </div>
+                            <a href="https://www.octohoodie.com/" class="text-decoration-none text-reset"
+                                target="blank">
+                                <h3 class="text-center display-6 module-heading">Octohoodie</h3>
+                                <p class="text-center">Fashion & Clothing</p>
+                            </a>
+                            <div class="text-center">
+                                <a href="https://www.octohoodie.com/"
+                                    class="btn btn-light btn-block text-decoration-none text-reset" target="_blank">
+                                    Visit Site
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.octohoodie.com/"
+                                    class="btn btn-info btn-block text-decoration-none text-reset website-link savedPopUp"
+                                    target="_blank" title="Save for later">
+                                    SAVE LINK
+                                </a>
+                                <span class="likedHeart">&#9825</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer with socials and mobile. Some socials not activated yet. Still planing on which 
+    to use so just linked them all to Insta for the purposes of linking-->
+    <footer class="main-footer mt-auto">
+        <nav class="bg-body-tertiary">
+            <div class="container-fluid footer-navbar">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex flex-column align-items-center text-centre">
+                            <a class="navbar-logo pb-3 py-md-0" href="index.html">
+                                <img class="footerImage main-footer" src="_media/DigitalBlendLogo.png"
+                                    alt="Company Logo" style="width: 40%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><i class="fas fa-phone"> <span class="social-fonts">+27 21 456
+                                            7891</span></i></li>
+                                <li class="social-item"><i class="fas fa-mobile-alt"> <span class="social-fonts">+27 74
+                                            175 9593</span></i></li>
+                                <li class="social-item"><i class="fas fa-map-marker-alt"> <span
+                                            class="social-fonts">Cape Town</span></i></li>
+                                <li class="social-item"><i class="fas fa-envelope"> <span
+                                            class="social-fonts">neil@digitalblend.co.za</span></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><a class="nav-link active" aria-current="page"
+                                        href="index.html">Home</a></li>
+                                <li class="social-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="social-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="social-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex justify-content-center social-icons">
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- Local JS File -->
+    <script src="digitalScript.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

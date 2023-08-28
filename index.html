@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<!-- Head section with links to stylesheet, google fonts, fontawesome abd Bootstrap -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Header Nav and Hero Banner with background image on Div container and logo as image supdrimposed -->
+    <header>
+        <div>
+            <ul class="list-unstyled">
+                <li class="nav-item responsive-font">
+                    <button  type="button" class="btn btn-info"><a class="nav-link" id="user-registration">REGISTER</a></button>
+                    <span id="welcome-message"></span>
+                    <button type="button" class="btn btn-warning" id="logout-btn">Log Out</button>
+                </li>
+                <!-- User Registration Pop-Up -->
+                <div class="container-md d-flex align-items-center justify-content-center">
+                    <div id="registration-popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn" id="close-popup">&times;</span>
+                            <!-- Registration form -->
+                            <form id="registration-form">
+                                <h4 class="text-center">REGISTER</h4>
+                                <!-- Form fields and inputs -->
+                                <!-- User Name -->
+                                <div class="user-name">
+                                    <label for="userName" class="label-width">Username:</label><br>
+                                    <input type="text" name="userName" id="userName" required><br>
+                                </div>
+                                <!-- User email -->
+                                <div class="user-email">
+                                    <label for="userEmail">email:</label><br>
+                                    <input type="email" name="userEmail" id="userEmail" required><br>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success submit-btn"
+                                        id="submit-user-reg">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="registration-popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="close-popup">&times;</span>
+                        <!-- Your registration form HTML goes here -->
+                        <form id="registration-form">
+                            <!-- Form fields and inputs -->
+                        </form>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="_media/DigitalBlendLogo.png" alt="Company Logo" style="width: 15%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- NavBar -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item responsive-font save-border-color">
+                            <a href="savedItems.html" class="nav-link">Saved</a>
+                        </li>
+
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Image -->
+        <div class="banner-container">
+            <div class="banner-container">
+                <div class="parallax-background"></div>
+                <div class="banner-image d-flex justify-content-center">
+                    <img src="_media/DigitalBlendLogo.png" class="img-fluid" alt="logo" style="width: 35%">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- First Article - H1 header -->
+        <article class="first-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h1 class="mainHeaderTitle display-1">digitalblend</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Second Article - Lead Overview -->
+        <div class="second-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-module d-flex justify-content-center align-items-center">
+                            <h3 h3>Blending life with technology.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third Article - Text/Image Containers - First Mouse Over -->
+        <div class="third-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-module" style="width: 100%">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img id="image-hover" class="card-img-top img-fluid rounded savedPopUp"
+                                    src="_media/laptop-code-plant.jpg" alt="Laptop on desk" title="Save For Later">
+                            </div>
+                            <span class="likedHeart">&#9825</span>
+                            <h3 class="text-center display-6 module-heading">Custom Design</h3>
+                            <p class="text-center pt-2">Custom built and designed or customize a Wordpress site. We can
+                                assist with both.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- SECOND SAVE FOR LATER -->
+                    <div class="col-md-4">
+                        <div class="product-module" style="width: 100%">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img id="image-hover" class="card-img-top img-fluid rounded save-border savedPopUp"
+                                    src="_media/Mobile.jpg" alt="Mobile Phone" title="Save For Later">
+                            </div>
+                            <span class="likedHeart">&#9825</span>
+                            <h3 class="text-center display-6 module-heading">Fully Responsive</h3>
+                            <p class="text-center pt-2">All our sites are 100% responsive on all devices ensuring ease
+                                of use.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="product-module">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img id="image-hover" class="card-img-top img-fluid rounded savedPopUp"
+                                    src="_media/laptop-closeup.jpg" alt="Working on a laptop" title="Save For Later">
+                            </div>
+                            <span class="likedHeart">&#9825</span>
+                            <h3 class="text-center display-6 module-heading">Selling something?</h3>
+                            <p class="text-center pt-2"><strong>Perfect!</strong> Leverage Shopify, Wordpress or build a
+                                custom-online store.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth Article - Divider content - Testamonial -->
+        <div class="fourth-article">
+            <div class="card d-flex justify-content-center align-items-center testimonial1">
+                <div class="card-header testimonial-header">
+                    "Great Product!"
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>Digital Blend has been amazing. Great product!</p>
+                        <footer class="blockquote-footer">Clinton Gaehwiler - <cite
+                                title="Source Title">Psychologist</cite></footer>
+                        <img src="_media/stars_small.webp" alt="stars" class="img-fluid">
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <!-- Fifth Article - SEO advertisement -->
+        <div>
+            <div class="card text-bg-dark">
+                <img src="_media/lady-with-computer.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title display-2 italicHeader">{Blend SEO}</h5>
+                    <p class="card-text lead">Make sure your is content optimised to attract the correct customers to
+                        your website.</p>
+                    <p class="card-text">
+                        After all, no one likes being invis...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Sixth Article - Sign-up - Newsletter -->
+        <div class="newsletter-sign-up sixth-article py-5 py-md-0">
+            <!-- Left-Side Image -->
+            <div class="container newsletter">
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="_media/sign-up.webp" class="img-fluid rounded" alt="sign-up image" style="width: 50%">
+                    </div>
+                    <!-- Right-Side Form -->
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label display-6">Sign up to our newsletter</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seventh - Testimonial -->
+        <div class="seventh-article">
+            <div class="card d-flex justify-content-center align-items-center testimonial2">
+                <div class="card-header testimonial-header">
+                    "Unbelievable!"
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>I'm so happy I can sell my products online, finally!</p>
+                        <footer class="blockquote-footer">Rebecca - <cite title="Source Title">Fashion Designer</cite>
+                        </footer>
+                        <img src="_media/stars_small.webp" alt="stars" class="img-fluid">
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer with socials and mobile. Some socials not activated yet. Still planing on which 
+    to use so just linked them all to Insta for the purposes of linking-->
+    <footer class="main-footer mt-auto">
+        <nav class="bg-body-tertiary">
+            <div class="container-fluid footer-navbar">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex flex-column align-items-center text-centre">
+                            <a class="navbar-logo pb-3 py-md-0" href="index.html">
+                                <!-- Not sure why the HTML Error checker is flagging the % ratio? -->
+                                <img class="footerImage main-footer" src="_media/DigitalBlendLogo.png"
+                                    alt="Company Logo" style="width: 40%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><i class="fas fa-phone"> <span class="social-fonts">+27 21 456
+                                            7891</span></i></li>
+                                <li class="social-item"><i class="fas fa-mobile-alt"> <span class="social-fonts">+27 74
+                                            175 9593</span></i></li>
+                                <li class="social-item"><i class="fas fa-map-marker-alt"> <span
+                                            class="social-fonts">Cape Town</span></i></li>
+                                <li class="social-item"><i class="fas fa-envelope"> <span
+                                            class="social-fonts">neil@digitalblend.co.za</span></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><a class="nav-link active" aria-current="page"
+                                        href="index.html">Home</a></li>
+                                <li class="social-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="social-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="social-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex justify-content-center social-icons">
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- Local JS File -->
+    <script src="digitalScript.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<!-- Head same as index -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Header Nav and Hero Banner with background image on Div container and logo as image supdrimposed -->
+    <header>
+        <div>
+            <ul class="list-unstyled">
+                <li class="nav-item responsive-font">
+                    <button  type="button" class="btn btn-info"><a class="nav-link" id="user-registration">REGISTER</a></button>
+                    <span id="welcome-message"></span>
+                    <button type="button" class="btn btn-warning" id="logout-btn">Log Out</button>
+                </li>
+                <!-- User Registration Pop-Up -->
+                <div class="container-md d-flex align-items-center justify-content-center">
+                    <div id="registration-popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close-btn" id="close-popup">&times;</span>
+                            <!-- Registration form -->
+                            <form id="registration-form">
+                                <h4 class="text-center">REGISTER</h4>
+                                <!-- Form fields and inputs -->
+                                <!-- User Name -->
+                                <div class="user-name">
+                                    <label for="userName" class="label-width">Username:</label><br>
+                                    <input type="text" name="userName" id="userName" required><br>
+                                </div>
+                                <!-- User email -->
+                                <div class="user-email">
+                                    <label for="userEmail">email:</label><br>
+                                    <input type="email" name="userEmail" id="userEmail" required><br>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-success submit-btn"
+                                        id="submit-user-reg">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="registration-popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" id="close-popup">&times;</span>
+                        <!-- Your registration form HTML goes here -->
+                        <form id="registration-form">
+                            <!-- Form fields and inputs -->
+                        </form>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="_media/DigitalBlendLogo.png" alt="Company Logo" style="width: 15%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- NavBar -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item responsive-font save-border-color">
+                            <a href="savedItems.html" class="nav-link">Saved</a>
+                        </li>
+
+                        <li class="nav-item responsive-font">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- First Article - H1 header -->
+        <article class="first-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h1 class="mainHeaderTitle display-1">contact</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Second Article - Lead Overview -->
+        <div class="second-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-module d-flex justify-content-center align-items-center">
+                            <h3>Contact us for more information.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Contact Form wit Radio Btn's -->
+        <div class="form-container pb-5">
+            <form>
+                <div class="row contact-padding px-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="contactSurname" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="contactSurname"
+                                placeholder="Enter your surname">
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-3">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber"
+                                placeholder="Enter your contact number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail"
+                                placeholder="Enter your email address">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 px-3">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 px-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary" id="submitContactButton">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="main-footer mt-auto">
+        <!-- Footer with socials and mobile. Some socials not activated yet. Still planing on which 
+    to use so just linked them all to Insta for the purposes of linking-->
+        <nav class="bg-body-tertiary">
+            <div class="container-fluid footer-navbar">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex flex-column align-items-center text-centre">
+                            <a class="navbar-logo pb-3 py-md-0" href="index.html">
+                                <img class="footerImage main-footer" src="_media/DigitalBlendLogo.png"
+                                    alt="Company Logo" style="width: 40%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><i class="fas fa-phone"> <span class="social-fonts">+27 21 456
+                                            7891</span></i></li>
+                                <li class="social-item"><i class="fas fa-mobile-alt"> <span class="social-fonts">+27 74
+                                            175 9593</span></i></li>
+                                <li class="social-item"><i class="fas fa-map-marker-alt"> <span
+                                            class="social-fonts">Cape Town</span></i></li>
+                                <li class="social-item"><i class="fas fa-envelope"> <span
+                                            class="social-fonts">neil@digitalblend.co.za</span></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center">
+                            <ul class="footer-lists">
+                                <li class="social-item"><a class="nav-link active" aria-current="page"
+                                        href="index.html">Home</a></li>
+                                <li class="social-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="social-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                <li class="social-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex justify-content-center social-icons">
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="socialShares" href="https://www.instagram.com/digitalblendbusiness/"
+                                target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- Local JS File -->
+    <script src="digitalScript.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

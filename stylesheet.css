@@ -1,0 +1,212 @@
+/* Deault Font Family */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Special Font */
+.mainHeaderTitle {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(56, 70, 82);
+}
+
+/* Body Background */
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+/* display settings */
+.display-1 {
+    /* font-size: 3rem; */
+    font-size: 5vw;
+}
+
+/* Card Fonts */
+.display-6 {
+    font-size: 1.6rem;
+}
+
+/* Parallax Banner Code */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("_media/blotch.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* Banner Padding Top & Bottom */
+.banner-image {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+/* Padding */
+.module-heading {
+    padding-top: 3%;
+}
+
+/* First Article Spacing */
+.first-article {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+/* Second Article Spacing */
+.second-article {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Third article & Newsletter */
+.third-article,
+.newsletter {
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+/* Block Transition Effects */
+.product-module {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.product-module:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.btn {
+    justify-content: center;
+}
+
+/* Testimonial spacing */
+.testimonial1 {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: rgb(147, 150, 202);
+}
+
+/* Padding */
+.testimonial2 {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: rgb(147, 180, 202);
+}
+
+/* Header Styling */
+.testimonial-header {
+    font-style: italic;
+}
+
+/* Styling  */
+.blockquote-footer {
+    color: white;
+}
+
+/* Styling */
+.italicHeader {
+    font-style: italic;
+}
+
+/* Padding */
+.newsletter-sign-up {
+    margin-top: 5%;
+}
+
+/* More padding */
+.socialShares {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Centerting mobile footer logo */
+.navbar-logo {
+    text-align: center;
+}
+
+/* More padding */
+.footer-navbar {
+    padding-top: 2%;
+}
+
+/* Bullet list removal */
+.footer-lists {
+    list-style: none;
+    ;
+}
+
+/* Typeface */
+.social-fonts {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* UserRegistation popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Submit Btn Tpo Margin */
+.submit-btn {
+    margin-top: 2%;
+}
+
+/*welcome message*/
+#welcome-message {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#submitCommentButton {
+    margin-left: 1.5%;
+}
+
+#submitContactButton {
+    margin-left: 1.5%;
+}
